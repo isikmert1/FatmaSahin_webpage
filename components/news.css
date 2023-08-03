@@ -8,7 +8,6 @@
 }
 
 body {
-    padding-top: 68px;
     background-color: rgb(245, 245, 245);
 }
 
@@ -69,29 +68,73 @@ header {
 .main-component {
     display: flex;
     flex-direction: column;
-    margin: 50px 0 80px 0;
+    margin: 50px;
+    padding: 4em;
 }
 
-.main-component h1 {
-    margin: 0 0 50px 50px;
-    font-size: 36px;
-    text-align: center;
-}
-
-.photoGrid-container {
+.news-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     gap: 2em;
+    margin: 40px 0;
+    padding-bottom: 68px;
+    border-bottom: 1px solid lightgrey;
 }
 
-.grid-photos {
-    width: 280px;
-    height: 280px;
-    object-fit: cover;
+
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1.2em;
+}
+
+.news-content a {
+    width: 28%;
+    text-decoration: none;
+    color: red;
+}
+
+.img-container img {
+    width: 500px;
+    height: 300px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 50px;
+    margin-top: -80px;
+}
+
+.page-btns {
+    background-color: rgb(240, 240, 240);
+    border: 1.5px solid lightgray;
     border-radius: 10px;
-    border: 1px solid lightgray;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.page-btns:hover {
+    background-color: rgb(190, 190, 190);
+    transform: scale(1.01);
+}
+
+#empty-btn {
+    cursor: default;
+}
+
+#empty-btn:hover {
+    background-color: rgb(240, 240, 240);
+    transform: scale(1.00);
+}
+
+#current-btn {
+    background-color: red;
+    color: white;
 }
 
 footer {
