@@ -66,17 +66,26 @@ header {
 }
 
 main {
-    padding: 40px 240px;
     background-color: rgb(245, 245, 245);
 
 }
 
-.mainImg-component img { 
-    margin-right: 20px;
+.main-component {
+    padding: 20px 240px 40px 240px;
+}
+
+.intro-container {
+    background: url("https://www.gaziantep.bel.tr/uploads/2021/03/baskan-sahin-guclu-turkiyenin-guclu-kadinlari-zirvesine-katildi-1.jpg");
+    padding-bottom: 450px;
+    background-size: cover;                   
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 main h1 {
-    padding: 10px 0 15px 0;
+    padding: 10px 0;
+    margin-top: 40px;
+    text-align: center;
 }
 
 .mainText-component p {
@@ -139,4 +148,24 @@ footer {
 
 .footer-socialBtn i {
     margin-right: 5px;
+}
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 10px; /* Place the button at the bottom of the page */
+    right: 10px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: rgb(190, 0, 0); /* Add a dark-grey background on hover */
 }
